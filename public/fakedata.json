@@ -1,0 +1,45 @@
+[
+    {
+        "id":1,
+        "image":"https://www.healthcareitnews.com/sites/hitn/files/Ryman%20Healthcare_HITN.jpg",
+        "name":"Infection Prevention and Control (IPC) Review",
+        "description":"A Subject Matter Expert (SME) is assigned to review your existing IPC measures. Our SME will work with you to identify and implement a range of practical measures that will strengthen your response to a COVID-19 outbreak and better protect your residents and team members.",
+        "rating":4
+    },
+    {
+        "id":2,
+        "image":"https://lasa.asn.au/wp-content/uploads/2018/07/shutterstock_107822132-resized.jpg",
+        "name":"Personal Protective Equipment (PPE) Training",
+        "description":"Through the Aspen Medical Training Academy, your team will be given comprehensive training on the appropriate use of PPE including safe donning and doffing procedures.",
+        "rating":5
+    },
+    {
+        "id":3,
+        "image":"https://www.frontiers.health/wp-content/uploads/2019/10/elderly-care.jpg",
+        "name":"Augmentation of Clinical Leadership",
+        "description":"We can deploy short-term experienced senior nurses to help alleviate the pressure of managing new team members, increased workforce ratios,during a COVID-19 outbreak, we can act as a ‘Master Vendor’ and assume,during a COVID-19 outbreak, we can act as a ‘Master Vendor’ and assume,during a COVID-19 outbreak, we can act as a ‘Master Vendor’ and assume.",
+        "rating":3
+    },
+    {
+        "id":4,
+        "image":"https://www.asiainsurancereview.com/UploadedImages/MagazineImages/Articles/AIR/January-2020/Insurance-LifeHealth-HealthcareHurdlesElderly-Mita-bg-w.jpg",
+        "name":"Access to Agency Networks",
+        "description":"As a well-known organization in the healthcare recruitment sector,given comprehensive training on the appropriate use of PPE including safe,given comprehensive training on the appropriate use of PPE including safe,organization in the healthcare recruitment sector,given comprehensive training on the appropriate use, your ACS will have access to our wide network of nursing.",
+        "rating":5
+    },
+    {
+        "id":5,
+        "image":"https://thumbs.dreamstime.com/z/old-man-hospital-doctor-health-old-man-happy-patient-doctor-hospital-business-man-doctor-clinic-126413863.jpg",
+        "name":"Consolidation and Reinduction of Agency Workforce",
+        "description":"To assist with the complexities of managing multiple agency contracts during a COVID-19 outbreak, we can act as a ‘Master Vendor’ and assume the responsibility of re-inducting.",
+        "rating":4
+    },
+    {
+        "id":6,
+        "image":"https://www.healthcareitnews.com/sites/hitn/files/elderly_care.jpg",
+        "name":"Administration Management",
+        "description":"Our program is designed to practical measures that will strengthen your  reduce the administrative burden for ACSs impacted by the COVID-19 pandemic.Our SME will work with you to identify and implement a range of practical measures that will strengthen your response to a COVID-19 outbreak and better protect your residents We manage the recruitment.",
+        "rating":4
+    }
+
+]
