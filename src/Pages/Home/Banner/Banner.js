@@ -6,7 +6,7 @@ import carousel4  from '../../../Images/Carousel/carosel-4.jpg';
 const Banner = () => {
     return (
         <>
-            <Carousel >
+            <Carousel   className="" >
   <Carousel.Item interval={1000}>
     <img
       className="w-100"
@@ -14,7 +14,7 @@ const Banner = () => {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>Aged Care Emergency Retrieval Teams</h3>
+      <h3 style={{color: "lightBlue"}}>Aged Care Emergency Retrieval Teams</h3>
      
     </Carousel.Caption>
   </Carousel.Item>
@@ -25,7 +25,7 @@ const Banner = () => {
       alt="Second slide"
     />
     <Carousel.Caption>
-      <h3>Aged Care Clinical and Essential Support Service</h3>
+      <h3 style={{color: "lightBlue"}}>Aged Care Clinical and Essential Support Service</h3>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -35,7 +35,7 @@ const Banner = () => {
       alt="Third slide"
     />
     <Carousel.Caption>
-      <h3>Environmental Health Assessment and Support</h3>
+      <h3 style={{color: "lightCoral"}}>Environmental Health Assessment and Support</h3>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
