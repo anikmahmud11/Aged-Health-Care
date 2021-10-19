@@ -1,7 +1,19 @@
-.form-style{
-    
-    margin: auto;
+.form-style{ 
+  margin: auto;
   width: 50%;
-  border: 3px solid green;
+  border: 2px solid rgb(72, 204, 204);
   padding: 10px;
+  border-radius: 20px;
+}
+/* responsive */
+@media only screen and (max-width:688px) {
+  .form-style{ 
+    margin: auto;
+    width: 70%;
+    
+  }
+  
+}
+@media only screen and (min-width:689px) and (max-width: 991px){
+
 }

@@ -1,16 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 
 const Booking = () => {
     const {serviceName}=useParams();
+    const [serviceDetails, setServiceDetails]=useState([])
+    const [singleService, setSingleService]=useState({})
+    useEffect(()=>{
+      fetch('/ServiceDetails.json')
+      .then(res=>res.json())
+      .then(data=>setServiceDetails(data.details))
+    },[])
+
+    useEffect(()=>{
+      const foundService = serviceDetails.find(details=>details.name === serviceName)
+      setSingleService(foundService);
+    },[serviceDetails,serviceName])
     
     return (
         <div>
-           <h1 className="mt-2">{serviceName}</h1>
+           <h1 className="mt-2 text-primary">{serviceName}</h1>
+           <p className="text-secondary">{singleService?.description}</p>
+           <img className="w-25" src={singleService?.image} alt="" />
            <br />
-           <p>Please fill the form</p>
-          <div className="form-style">
+           <br />
+           <p>Please fill the form for booking</p>
+          <div className="form-style my-3">
           <Form>
   <Row className="mb-3">
     <Form.Group as={Col} controlId="formGridEmail">

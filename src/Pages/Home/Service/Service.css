@@ -1,6 +1,6 @@
 .service{
     color: rgba(240, 248, 255, 0.678);
-    background-color: rgb(79, 88, 88);
+    background-color: rgba(37, 109, 168, 0.767);
     border-radius:15px ;
 }
 .service img{
@@ -9,4 +9,10 @@
 }
 .rating{
     color: rgb(235, 220, 181);
+}
+.service:hover{
+    background-color: rgb(91, 122, 129);
+    border: 2px solid rgb(58, 189, 250);
+    opacity: 1;
+    transition: 0.4s;
 }
