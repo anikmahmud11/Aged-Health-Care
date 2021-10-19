@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import useAuth from '../../../hooks/useAuth';
 import './Login.css';
 import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendPasswordResetEmail, updateProfile } from "firebase/auth";
+import { useHistory, useLocation } from 'react-router';
 
 const Login = () => {
-    const{signInUsingGoogle}=useAuth()
-    const auth = getAuth();
-    const [name, setName] = useState('');
+  const{signInUsingGoogle}=useAuth()
+  const auth = getAuth(); 
+  const history = useHistory() 
+  let location = useLocation(); 
+  const redirect_uri = location.state?.from || '/home';
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -81,6 +85,12 @@ const Login = () => {
         sendPasswordResetEmail(auth, email)
           .then(result => { })
       }
+      const handleGoogleLogin =()=>{
+        signInUsingGoogle()
+        .then(result => {
+          history.push(redirect_uri);
+      })
+      }
     return (
         <div>
            <div className="form-style mt-3">
@@ -124,7 +134,7 @@ const Login = () => {
            </div>
             <br />
             <h3>or</h3>
-            <button onClick={signInUsingGoogle} className="btn btn-warning m-2">Google Sign In</button>
+            <button onClick={handleGoogleLogin} className="btn btn-warning m-2">Google Sign In</button>
            </div>
     );
 };
